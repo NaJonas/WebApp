@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+<main>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" th:href="@{/css/style.css}"href="../static/css/style.css" />
+        <title>Basketball Rules</title>
+    </head>
+    <header>
+        <h1>
+            Basketball
+        </h1>
+        <h3>
+            Difference in rules
+        </h3>
+
+
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" th:href="@{/}">Home</a> </li>
+            <li><a href="history.html" th:href="@{/history}">Basketball History</a></li>
+            <li><a href="rules.html" th:href="@{/rules}">Difference in rules</a></li>
+            <li><a href="register.html" th:href="@{/register}">Register a user</a></li>
+            <li><a href="profile.html" th:href="@{/profile}">User Info</a></li>
+        </ul>
+    </nav>
+    <article>
+        <table class="rules" border="1px solid black">
+            <tr>
+                <th>Rule</th>
+                <th>FIBA</th>
+                <th>NBA</th>
+                <th>NCAA</th>
+            </tr>
+            <tr>
+                <th>Playing time</th>
+                <th>4x10 minutes
+                    5 minutes over-time (OT)</th>
+                <th>4x12 minutes
+                    5 minutes over-time</th>
+                <th>2x20 minutes
+                    5 minutes over-time</th>
+            </tr>
+            <tr>
+                <th>Shot clock</th>
+                <th>24 seconds
+                    After offensive rebound: 14 seconds</th>
+                <th>24 seconds</th>
+                <th>Men: 35 seconds
+                Women: 30 seconds</th>
+            </tr>
+            <tr>
+                <th>3-point line</th>
+                <th>6.75m (6.60 on baseline)</th>
+                <th>7.24m (6.70m on baseline)</th>
+                <th>Men: 6.25m
+                    Women: 6.325m</th>
+            </tr>
+            <tr>
+                <th>Time-outs</th>
+                <th>2 in first half
+                    3 in second half (but only 2 in last two minutes of the 4th period)
+                    1 per OT period
+                    Always 60 seconds
+                    Never carried over</th>
+                <th>6 regular
+                    2 per OT period
+                    = 60 or 100 seconds
+                    + 1 short time-out (20 seconds) per half
+                    The second short time-out can be carried over to OT period
+                    !!! additional regulations</th>
+                <th>4 regular
+                    30 seconds
+                    + long
+                    60 seconds
+                    Maximum 3 regular and 1 long in second half
+                    !!! additional regulations</th>
+            </tr>
+            <tr>
+               <th>Jump ball and alternating possession</th>
+                <th>Jump ball to star game
+                    The one losing initial jump ball gets possession for the next jump ball situation
+                    Alternating possession between teams thereafter for all jump ball situations</th>
+                <th>Jump ball to star game
+                    The one losing initial jump ball gets possession to start 2nd and 4th quarters
+                    The one winning initial jump ball gets possession to start 3rd quarter
+                    All other jump ball situations played as "real jump ball"</th>
+                <th>Jump ball to star game
+                    The one losing initial jump ball gets possession for the next jump ball situation
+                    Alternating possession between teams thereafter for all jump ball situations
+                    Jump ball to start OT</th>
+            </tr>
+            <tr>
+                <th>Individual foul</th>
+                <th>Foul out on 5 (personal and technical)</th>
+                <th>Foul out on 6 or 2 technical</th>
+                <th>Foul out on 5 (personal and technical)</th>
+            </tr>
+            <tr>
+                <th>Technical foul
+                    (penalty</th>
+                <th>1 free throw and possession of the ball at centre</th>
+                <th>1 free throw per technical foul; play resumes at the point of interruption; foul is charged to individual in question (and automatic fine assessed)</th>
+                <th>2 free throws, play resumes at point of interruption</th>
+            </tr>
+            <tr>
+                <th>Goaltending/basket interference</th>
+                <th>No blocking a ball in downward flight towards the rim.
+
+                    Once the ball strikes the rim, any player can play the ball (i.e. swat it away or tap it in)</th>
+                <th>No blocking a ball in downward flight towards the rim.
+
+                    An imaginary cylinder exists that has the basket as its base. Touching the ball while any part of it is in this cylinder (and still has a chance to go in) is a violation</th>
+                <th>No blocking a ball in downward flight towards the rim.
+
+                    An imaginary cylinder exists that has the basket as its base. Touching the ball while any part of it is in this cylinder (and still has a chance to go in) is a violation.</th>
+            </tr>
+            <tr>
+                <th>Zone defense</th>
+                <th>Legal</th>
+                <th>Legal but…
+                    defensive player may not stay in the lane (a.k.a. key, restricted area) for longer than three seconds if he is not actively guarding an opponent</th>
+                <th>Legal</th>
+            </tr>
+            <tr>
+                <th>Player numbers</th>
+                <th>00, 0, 1-99</th>
+                <th>Any one or two digit number</th>
+                <th>00 (or 0), 1-5, 10-15, 20-25, 30-35, 40-45, 50-55</th>
+            </tr>
+
+        </table>
+
+    </article>
+
+
+
+
+
+</main>
+<footer>
+    &copy; J. Navikas 2019
+</footer>
+</body>
+</html>

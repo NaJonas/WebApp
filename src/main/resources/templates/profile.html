@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+<main>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" th:href="@{/css/style.css}"href="../static/css/style.css" />
+        <title>Basketball History</title>
+    </head>
+    <header>
+        <h1>
+            Basketball
+        </h1>
+        <h3>
+            Profile
+        </h3>
+
+
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" th:href="@{/}">Home</a> </li>
+            <li><a href="history.html" th:href="@{/history}">Basketball History</a></li>
+            <li><a href="rules.html" th:href="@{/rules}">Difference in rules</a></li>
+            <li><a href="register.html" th:href="@{/register}">Register a user</a></li>
+            <li><a href="profile.html" th:href="@{/profile}">User Info</a></li>
+        </ul>
+    </nav>
+    <article>
+
+        <table class = "profile">
+            <tr><td><em>First Name:</em></td></tr>
+            <tr><td th:text="${collatedUser.getUser().firstName}">BOB</td></tr>
+            <tr><td><em>Last Name:</em></td></tr>
+            <tr><td th:text="${collatedUser.getUser().lastName}">Bob</td></tr>
+            <tr><td><em>Email:</em></td></tr>
+            <tr><td th:text="${collatedUser.getUser().email}">nav@gmail.com</td></tr>
+            <tr><td><em>Login History:</em></td></tr>
+            <tr th:each="login : ${collatedUser.logins}">
+                <td th:text="${login.time}">1st April 2019</td>
+        </table>
+
+    </article>
+</main>
+</body>
+</html>

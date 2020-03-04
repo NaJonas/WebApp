@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<main>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" th:href="@{/css/style.css}"href="../static/css/style.css" />
+        <script src="../static/js/main.js" th:src="@{/js/main.js}" defer></script>
+        <title>Basketball History</title>
+    </head>
+<header>
+<h1>
+    Basketball
+</h1>
+    <h3>
+    History of Basketball
+    </h3>
+
+
+</header>
+
+<nav>
+<ul>
+    <li><a href="index.html" th:href="@{/}">Home</a> </li>
+    <li><a href="history.html" th:href="@{/history}">Basketball History</a></li>
+    <li><a href="rules.html" th:href="@{/rules}">Difference in rules</a></li>
+    <li><a href="register.html" th:href="@{/register}">Register a user</a></li>
+    <li><a href="profile.html" th:href="@{/profile}">User Info</a></li>
+</ul>
+</nav>
+<article>
+
+   <p> It was all started by Dr. James Naismith, the son of two Scottish immigrants to Canada. By 1891, Dr. Naismith was teaching physical education in Springfield, MA at the YMCA International Training School; which today is Springfield College. While there, he was asked by the director of physical education, Dr. Luther Gulick, to come up with a new game students could play indoors during the winter that would help keep track and field runners in shape and would be relatively safe to play - particularly that it would have a small amount of physical contact so that the players would not get injured in this game.
+    Dr. Naismith was given two weeks to come up with such a game. What he came up with was inspired by a game he had played as a child, "Duck on a Rock", which is a game that has been played since medieval times. In "Duck on a Rock", a large stone "duck" would be placed on top of an even larger rock or tree stump or the like.
+
+    One unlucky player was then given the job of guarding the rock. All the other players would then have one rock to throw at the "duck" each, in order to knock it off the tree stump or rock it had been placed on. If the "duck" was knocked off before the throwers had all thrown their rocks, the defender will cease defending and pick up the "duck" and go on the offensive.  He decided to put the basket high on the wall because he observed most injuries seemed to happen in sports around the goal zone with both defenders and the offensive side becoming very aggressive in these regions. So he felt by putting it up high, it would prevent some of the potential for injury between offenses and defenses.
+   </p>
+    <p>
+        In 1946, the Basketball Association of America (BAA) was formed. The first game was played in Toronto, Ontario, Canada between the Toronto Huskies and New York Knickerbockers on November 1, 1946. Three seasons later, in 1949, the BAA merged with the National Basketball League (NBL) to form the National Basketball Association (NBA). By the 1950s, basketball had become a major college sport, thus paving the way for a growth of interest in professional basketball. In 1959, a basketball hall of fame was founded in Springfield, Massachusetts, site of the first game. Its rosters include the names of great players, coaches, referees and people who have contributed significantly to the development of the game. The hall of fame has people who have accomplished many goals in their career in basketball. An upstart organization, the American Basketball Association, emerged in 1967 and briefly threatened the NBA's dominance until the ABA-NBA merger in 1976. Today the NBA is the top professional basketball league in the world in terms of popularity, salaries, talent, and level of competition.
+    </p>
+
+</article>
+
+<picture>
+
+    <img class="img" onclick="showImage(this)" src = "../static/images/FirstTeam1891.jpg" th:src="@{/images/FirstTeam1891.jpg}"/>
+    <figure>
+    <img class="img" onclick="showImage(this)" src = "../static/images/firstbasket.gif" th:src="@{/images/firstbasket.gif}"/>
+        <figcaption>Ossie Schectman scores the first ever basket in NBA history.</figcaption>
+    </figure>
+</picture>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+
+
+</main>
+
+<footer>
+    &copy; J. Navikas 2019
+</footer>
+</body>
+</html>
